@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        et = (EditText) findViewById(R.id.editText);
+        et = findViewById(R.id.editText);
         tts = new TextToSpeech(this, this);
     }
     @Override
